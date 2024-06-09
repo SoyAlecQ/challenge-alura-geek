@@ -1,0 +1,244 @@
+/* Estilos globales */
+
+:root {
+  /* Header */
+  --header-backgroud: #03318c;
+  --header-title-color: #e5e5e5;
+  /* Card */
+  --card-background: #03318c;
+  /* Form */
+  --form-color: #03318c;
+  /* Shadow */
+  --shadow-color: #c0c0c0;
+}
+
+h1 {
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.8rem;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--header-backgroud);
+  padding: 1.5rem 0rem;
+  color: var(--header-title-color);
+  border-bottom: 0.5rem solid var(--shadow-color);
+}
+
+.header__encabezado {
+  display: flex;
+  align-items: center;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 5rem 0rem;
+  flex-wrap: wrap;
+}
+
+/* Sección Mis Productos */
+
+.section__productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 48%;
+}
+
+.section__productos__titulo {
+  margin: 3rem 0;
+}
+
+.section__productos__lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 650px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  gap: 2rem 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: -10px 10px 5px var(--shadow-color);
+  padding: 1.5rem;
+  max-height: 850px;
+}
+
+.productos__vacio {
+  justify-content: center;
+  align-items: center;
+  font-family: "Share Tech Mono", monospace;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  display: none;
+}
+
+.productos__tarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  justify-content: space-between;
+  background-color: var(--card-background);
+  color: white;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 1.1rem;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: -0.5rem 0.5rem 5px silver;
+  width: fit-content;
+  margin-right: 0.4rem;
+  list-style: none;
+}
+
+.productos__tarjeta img {
+  width: 176px;
+  height: 176px;
+  object-fit: cover;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.productos__tarjeta__nombre {
+  font-size: 1.3rem;
+  margin-top: 0.3rem;
+  max-width: 176px;
+  text-wrap: wrap;
+}
+
+.productos__tarjeta__bottom {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.productos__tarjeta__eliminar:hover {
+  cursor: pointer;
+  transform: scale(1.15, 1.15);
+}
+
+.productos__tarjeta__eliminar:active {
+  transform: scale(0.95, 0.95);
+}
+
+/* Sección Agregar Productos */
+
+.section__productos_agregar {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  max-width: 48%;
+}
+
+.section__productos__agregar__titulo {
+  display: flex;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.form__input {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: normal;
+  font-size: 1rem;
+  color: var(--form-color);
+  width: 100%;
+  height: 45px;
+  border: 3px solid var(--form-color);
+  border-radius: 2rem;
+}
+
+.form__input::placeholder {
+  color: var(--form-color);
+  padding-left: 20px;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__botones__opciones {
+  display: flex;
+  gap: 1rem;
+}
+
+.form__botones {
+  width: 100%;
+  height: 45px;
+  border-radius: 15px;
+  border: none;
+  justify-content: center;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.boton__submit {
+  background-color: var(--form-color);
+  border: 2px solid var(--form-color);
+  color: #fff;
+}
+
+.boton__eliminar {
+  background-color: transparent;
+  border: 2px solid var(--form-color);
+  color: var(--form-color);
+}
+
+.mensaje__error {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 0.9rem;
+  color: #ff3434;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--header-backgroud);
+  color: var(--header-title-color);
+  padding: 2.5rem;
+  gap: 0.5rem;
+  border-top: 0.5rem solid var(--shadow-color);
+}
+
+.footer__encabezado {
+  display: flex;
+  align-items: center;
+}
+
+.footer__info {
+  font-family: "Share Tech Mono", monospace;
+  text-align: center;
+}
+
+.footer__info__data {
+  font-weight: normal;
+  font-size: 1rem;
+  margin-top: 0.1rem;
+}

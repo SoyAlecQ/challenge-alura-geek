@@ -1,0 +1,73 @@
+/* Estilos Responsivos */
+
+@media (max-width: 1024px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .section__productos,
+  .section__productos_agregar {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .section__productos__lista {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .product__img img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .product__name {
+    font-size: 1rem;
+    max-width: 100px;
+  }
+
+  .form__input,
+  .form__botones {
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header,
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header__encabezado h1,
+  .footer__encabezado h2 {
+    font-size: 1.5rem;
+  }
+
+  .product__card {
+    font-size: 0.9rem;
+  }
+
+  .product__card__delete {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section__productos {
+    order: 1;
+  }
+  .section__productos_agregar {
+    order: 2;
+  }
+}
