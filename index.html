@@ -46,7 +46,7 @@
                     data-form-imagen>
 
                 <div class="form__botones__opciones">
-                    <input class="form__botones boton__submit" type="submit" value="Enviar" disabled>
+                    <input class="form__botones boton__submit" type="submit" value="Enviar">
                     <input class="form__botones boton__eliminar" type="button" value="Limpiar" data-form-limpiar>
                 </div>
             </form>
@@ -56,19 +56,7 @@
         <section class="section__productos">
             <h1 class="section__productos__titulo">MIS PRODUCTOS:</h1>
             <div class="section__productos__lista" data-productos>
-                <h1 class="productos__vacio">No se han agregado productos...</h1>
                 <!-- Cards de lista de productos -->
-                <div class="productos__tarjeta">
-                    <div class="productos__tarjeta__top">
-                        <li class="productos__tarjeta__img"><img src="./assets/img/productos/producto.jpg" /></li>
-                        <li class="productos__tarjeta__nombre">Nombre</li>
-                    </div>
-                    <div class="productos__tarjeta__bottom">
-                        <li class="productos__tarjeta__precio">$ Precio</li>
-                        <li><button class="productos__tarjeta__eliminar" id="eliminar" data-eliminar-producto><i
-                                    class="bi bi-trash-fill"></i></button></li>
-                    </div>
-                </div>
             </div>
             </div>
         </section>
@@ -87,7 +75,10 @@
     </footer>
 
     <!-- Archivos JS -->
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/mostrarProductos.js" type="module"></script>
+    <script src="./assets/js/agregarProducto.js" type="module"></script>
+    <script src="./assets/js/eliminarProducto.js" type="module"></script>
+    <script src="./assets/js/limpiarFormulario.js" type="module"></script>
 </body>
 
 </html>

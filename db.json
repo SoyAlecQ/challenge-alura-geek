@@ -1,9 +1,40 @@
 {
-    "productos": [
-        {
-            "id": 1,
-            "nombre": "Nintendo Switch Lite",
-            "precio": ""
-        }
-    ]
+  "productos": [
+    {
+      "nombre": "Consola Retro",
+      "precio": "75000",
+      "imagen": "https://bestek.com.co/images/000064/large/1371_0.jpeg",
+      "id": 1
+    },
+    {
+      "nombre": "Nintendo Switch Neon",
+      "precio": "980000",
+      "imagen": "https://www.audiocolor.co/wp-content/uploads/2020/08/CONSOLASWITCHW-NEONBLUENEONRED-OYCON-1-1.jpg",
+      "id": 2
+    },
+    {
+      "nombre": "PS5 Slim",
+      "precio": "3800000",
+      "imagen": "https://www.audiocolor.co/wp-content/uploads/2024/01/Consola-PS5-SLIM-STANDAR-1-1.jpg",
+      "id": 3
+    },
+    {
+      "nombre": "Nintendo Switch Oled Mario",
+      "precio": "820000",
+      "imagen": "https://panamericana.vtexassets.com/arquivos/ids/516634/consola-nintendo-switch-oled-roja-2-45496597368.jpg?v=638340411498870000",
+      "id": 4
+    },
+    {
+      "nombre": "Consola Retro Sup",
+      "precio": "55000",
+      "imagen": "https://www.rago.com.co/cdn/shop/products/mini-consola-retro-sup-142512_1024x1024.jpg?v=1694746612",
+      "id": 5
+    },
+    {
+      "nombre": "Consola Portátil Android",
+      "precio": "250000",
+      "imagen": "https://s1.elespanol.com/2023/04/10/elandroidelibre/755184648_232302119_1706x960.jpg",
+      "id": 6
+    }
+  ]
 }
